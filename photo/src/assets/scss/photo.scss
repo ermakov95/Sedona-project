@@ -1,0 +1,19 @@
+@import "utils/reset";
+@import "utils/fonts";
+@import "utils/vars";
+
+.photo-page {
+    min-width: 240px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px 0px #000000;
+    button, a {
+        transition: all 100ms linear 0s;
+    }
+}
+
+@import "modules/header";
+@import "modules/photo__intro";
+@import "modules/photo__photo";
+@import "modules/footer";
