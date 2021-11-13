@@ -94,7 +94,7 @@
     padding: 30px 40px;
     max-width: 480px;
 }
-.video-picture {
+.video-video {
     height: 200px;
     width: 320px;
     object-fit: cover;
@@ -171,13 +171,13 @@
         left: 65px
     }
     .video {
-        height: 780px;
+        height: 770px;
     }
     .video-intro {
-        height: 250px;
-        padding: 55px 10px 85px;
+        height: 240px;
+        padding: 55px 10px 75px;
     }
-    .video-picture {
+    .video-video {
         height: 500px;
         width: 658px;
     }
@@ -232,9 +232,9 @@
         left: 85px
     }
     .video {
-        height: 820px;
+        height: 800px;
     }
-    .video-picture {
+    .video-video {
         width: 800px;
     }
 }
