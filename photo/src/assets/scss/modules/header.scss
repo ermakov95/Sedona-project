@@ -41,14 +41,14 @@
     }
 }
 
-.nav__toggle--cross {
+.nav__toggle_cross {
     position: absolute;
     top: 15.5px;
     right: 11.5px;
     fill: #ffffff;
 }
 
-.nav__toggle--burger {
+.nav__toggle_burger {
     position: absolute;
     top: 15.5px;
     right: 11.5px;
@@ -67,49 +67,34 @@
     }
 }
 
-.nav__item--logo {
+.logo {
     align-self: center;
     min-width: 156px;
     display: flex;
     justify-content: center;
-    position: relative;
-}
-.nav__item-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    width: 192px;
-    height: 56px;
-    z-index: -1;
 }
 
-.nav--nojs {
-    .nav__toggle--burger, .nav__toggle--cross {
+.nav_nojs {
+    .nav__toggle_burger, .nav__toggle_cross {
         display: none;
     }
 }
 
-.nav--opened .nav__toggle--burger {
+.nav_opened .nav__toggle_burger {
     display: none;
 }
 
-.nav--closed {
-    .nav__toggle--cross, .nav__item {
+.nav_closed {
+    .nav__toggle_cross, .nav__item {
         display: none;
     }
-}
-
-.sedona-picture {
-    height: 390px;
-    width: 100%;
 }
 
 @media (min-width: $tableWidth) {
     .nav {
         flex-direction:row;
     }
-    .nav--nojs, .nav--opened, .nav--closed {
+    .nav_nojs, .nav_opened, .nav_closed {
         .nav__item {
             display: block;
             background-color: white;
@@ -134,7 +119,7 @@
             &:active {
                 opacity: 30%;
             }
-            &--active {
+            &_active {
                 color: #766357;
                 &:hover {
                     color: #604E43;
@@ -145,15 +130,11 @@
             }
         }
     }
-    .nav__item--logo {
+    .logo {
         width: 16%;
         order: -1
     }
-    .nav__toggle--burger, .nav__toggle--cross {
+    .nav__toggle_burger, .nav__toggle_cross {
         display: none;
     }
-    .sedona-picture {
-        height: 520px;
-    }
-
 };

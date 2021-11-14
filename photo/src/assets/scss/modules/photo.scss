@@ -1,0 +1,209 @@
+.title {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0 15px 40px;
+    height: 165px;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.wrap__heading {
+    font-size: 18px;
+    font-family: $mainFont;
+}
+.title__text {
+    max-width: 450px;
+}
+.wrap__text {
+    font-size: 14px;
+    font-family: $secondFont;
+    line-height: 24px;
+    height: 72px;
+    color: #333333;
+}
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner {
+    width: 100%;
+}
+.item {
+    height: 416px;
+    padding: 20px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__picture {
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+}
+.subtitle {
+    height: 95px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.subtitle__title {
+    font-size: 14px;
+    font-family: $mainFont;
+}
+.subtitle__author {
+    font-size: 14px;
+    font-family: $secondFont;
+    text-transform: none;
+    color: #333333;
+}
+.subtitle__likes {
+    height: 30px;
+    position: relative;
+}
+.subtitle__icon {
+    fill: rgba($color: #000000, $alpha: 0.3);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.subtitle__count {
+    display: inline-block;
+    font-size: 14px;
+    font-family: $mainFont;
+    line-height: 14px;
+    width: 40px;
+    height: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 35px
+}
+
+@media (min-width: $tableWidth) {
+    .title {
+        border-bottom: none;
+        padding: 30px 0 80px;
+        height: 225px;
+    }
+    .wrap__heading {
+        font-size: 30px;
+    }
+    .title__text {
+        max-width: 440px;
+    }
+    .wrap__text {
+        height: 45px;
+    }
+    .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 648px;
+    }
+    .item {
+        width: 324px;
+        height: 347px;
+        padding: 0;
+        border-bottom: none;
+        &:first-child {
+            grid-column: 1/3;
+            height: 480px;
+            width: 100%;
+            .item__picture {
+            height: 400px;
+            width: 648px;
+            }
+            .subtitle__icon {
+            left: 135px;
+            }
+            .subtitle__count {
+            left: 170px
+            }
+        }
+    }
+    .item__picture {
+        height: 267px;
+        width: 324px;
+    }
+    .subtitle {
+        background-color: #F2F2F2;
+        height: 80px;
+        width: 100%;
+        padding: 18px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .subtitle__author {
+        grid-column: 1/2;
+
+    }
+    .subtitle__likes {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        height: 40px;
+    }
+    .subtitle__icon {
+        bottom: 10px;
+        left: 30px;
+    }
+    .subtitle__count {
+        bottom: 10px;
+        left: 65px
+    }
+}
+
+@media (min-width: $desktopWidth) {
+    .title {
+        padding: 60px 0 80px;
+        height: 255px;
+    }
+    .inner {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .item {
+        width: 400px;
+        height: 267px;
+        position: relative;
+        &:first-child {
+            grid-column: 1/4;
+            height: 400px;
+            .item__picture {
+            height: 100%;
+            width: 100%;
+            }
+            .subtitle__icon {
+            left: 315px;
+            }
+            .subtitle__count {
+            left: 350px
+            }
+        }
+    }
+    .item__picture {
+        height: 100%;
+        width: 100%;
+    }
+    .subtitle {
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        color: white;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .subtitle__icon {
+        bottom: 10px;
+        left: 50px;
+        fill: white;
+    }
+    .subtitle__count {
+        bottom: 10px;
+        left: 85px
+    }
+}

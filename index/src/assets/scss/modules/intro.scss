@@ -1,0 +1,40 @@
+.intro {
+    position: relative;
+    top: -27px;
+    z-index: -1;
+    height: 390px;
+    background: no-repeat center top / 767px 390px image-set("~/assets/img/bg-back-mobile.jpg" 1x, "~/assets/img/bg-back-mobile@2x.jpg" 2x);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+.intro__text {
+    width: 280px;
+    height: 215px;
+}
+
+.intro__triangle {
+    position: absolute;
+    bottom: 0;
+    height: 57px;
+    object-fit: none;
+}
+
+@media (min-width: $tableWidth) {
+    .intro {
+        height: 520px;
+        background: no-repeat center top / 1200px 520px image-set("~/assets/img/bg-back-tablet.jpg" 1x, "~/assets/img/bg-back-tablet@2x.jpg" 2x);
+    }
+    .intro__text {
+        width: 460px;
+        height: 350px;
+    }
+}
+
+@media (min-width: $desktopWidth) {
+    .intro {
+        top: -40px;
+    }
+}

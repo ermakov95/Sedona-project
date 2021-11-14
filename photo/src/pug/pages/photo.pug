@@ -7,83 +7,83 @@ block variables
 
 block content
   section.intro
-    img.intro_text(src="assets/img/text-sedona.svg", alt="Welcome to Sedona")
-    img.intro_triangle(src="assets/img/bg-intro-triangle-desktop.svg", alt="Triangle")
-  section.title.heading-text
-    h1.title-title.heading Фото и видео
-    .title-text.text Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+    img.intro__text(src="assets/img/text-sedona.svg", alt="Welcome to Sedona")
+    img.intro__triangle(src="assets/img/bg-intro-triangle-desktop.svg", alt="Triangle")
+  section.title.wrap
+    h1.title__heading.wrap__heading Фото и видео
+    .title__text.wrap__text Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
   section.photo
-    .photo__wrapper 
-      .photo__item
-        picture.photo__item-picture
+    .inner
+      .item
+        picture.item__picture
           source(media="(min-width: 1200px)", srcset="assets/img/photo-sunset-desktop@1x.webp, assets/img/photo-sunset-desktop@2x.webp 2x", type="image/webp", alt="Неродные просторы", loading="lazy")
           source(media="(min-width: 1200px)", srcset="assets/img/photo-sunset-desktop@1x.jpg, assets/img/photo-sunset-desktop@2x.jpg 2x", type="image/jpeg", alt="Неродные просторы", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-sunset-tablet@1x.webp, assets/img/photo-sunset-tablet@2x.webp 2x", type="image/webp", alt="Неродные просторы", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-sunset-tablet@1x.jpg, assets/img/photo-sunset-tablet@2x.jpg 2x", type="image/jpeg", alt="Неродные просторы", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-sunset-mobile@1x.webp, assets/img/photo-sunset-mobile@2x.webp 2x", type="image/webp", alt="Неродные просторы", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-sunset-mobile@1x.jpg, assets/img/photo-sunset-mobile@2x.jpg 2x", type="image/jpeg", alt="Неродные просторы", loading="lazy")
-          img.photo__item-picture(src="assets/img/photo-sunset-desktop@1x.jpg", alt="Неродные просторы", loading="lazy")
-        .photo__text
-          .photo__title Неродные просторы
-          .photo__author Автор фото: Борис
-          .photo__likes 
-            <svg class="photo__likes-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+          img.item__picture(src="assets/img/photo-sunset-desktop@1x.jpg", alt="Неродные просторы", loading="lazy")
+        .subtitle
+          .subtitle__title Неродные просторы
+          .subtitle__author Автор фото: Борис
+          .subtitle__likes 
+            <svg class="subtitle__icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
             </svg>
-            .photo__likes-count 1350
-      .photo__item
-        picture.photo__item-picture
+            .subtitle__count 1350
+      .item
+        picture.item__picture
           source(media="(min-width: 1200px)", srcset="assets/img/photo-cactus-desktop@1x.webp, assets/img/photo-cactus-desktop@2x.webp 2x", type="image/webp", alt="Местная растительность", loading="lazy")
           source(media="(min-width: 1200px)", srcset="assets/img/photo-cactus-desktop@1x.jpg, assets/img/photo-cactus-desktop@2x.jpg 2x", type="image/jpeg", alt="Местная растительность", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-cactus-tablet@1x.webp, assets/img/photo-cactus-tablet@2x.webp 2x", type="image/webp", alt="Местная растительность", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-cactus-tablet@1x.jpg, assets/img/photo-cactus-tablet@2x.jpg 2x", type="image/jpeg", alt="Местная растительность", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-cactus-mobile@1x.webp, assets/img/photo-cactus-mobile@2x.webp 2x", type="image/webp", alt="Местная растительность", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-cactus-mobile@1x.jpg, assets/img/photo-cactus-mobile@2x.jpg 2x", type="image/jpeg", alt="Местная растительность", loading="lazy")
-          img.photo__item-picture(src="assets/img/photo-cactus-desktop@1x.jpg", alt="Местная растительность", loading="lazy")
-        .photo__text
-          .photo__title Местная растительность
-          .photo__author Автор фото: Сергей
-          .photo__likes 
-            <svg class="photo__likes-icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+          img.item__picture(src="assets/img/photo-cactus-desktop@1x.jpg", alt="Местная растительность", loading="lazy")
+        .subtitle
+          .subtitle__title Местная растительность
+          .subtitle__author Автор фото: Сергей
+          .subtitle__likes 
+            <svg class="subtitle__icon" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
               <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
             </svg>
-            .photo__likes-count 143
-      .photo__item
-        picture.photo__item-picture
+            .subtitle__count 143
+      .item
+        picture.item__picture
           source(media="(min-width: 1200px)", srcset="assets/img/photo-roads-desktop@1x.webp, assets/img/photo-roads-desktop@2x.webp 2x", type="image/webp", alt="Дорога на север", loading="lazy")
           source(media="(min-width: 1200px)", srcset="assets/img/photo-roads-desktop@1x.jpg, assets/img/photo-roads-desktop@2x.jpg 2x", type="image/jpeg", alt="Дорога на север", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-roads-tablet@1x.webp, assets/img/photo-roads-tablet@2x.webp 2x", type="image/webp", alt="Дорога на север", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-roads-tablet@1x.jpg, assets/img/photo-roads-tablet@2x.jpg 2x", type="image/jpeg", alt="Дорога на север", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-roads-mobile@1x.webp, assets/img/photo-roads-mobile@2x.webp 2x", type="image/webp", alt="Дорога на север", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-roads-mobile@1x.jpg, assets/img/photo-roads-mobile@2x.jpg 2x", type="image/jpeg", alt="Дорога на север", loading="lazy")
-          img.photo__item-picture(src="assets/img/photo-roads-desktop@1x.jpg", alt="Дорога на север", loading="lazy")
-        .photo__text
-          .photo__title Дорога на север
-          .photo__author Автор фото: Пётр
-          .photo__likes 
-            <svg class="photo__likes-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+          img.item__picture(src="assets/img/photo-roads-desktop@1x.jpg", alt="Дорога на север", loading="lazy")
+        .subtitle
+          .subtitle__title Дорога на север
+          .subtitle__author Автор фото: Пётр
+          .subtitle__likes 
+            <svg class="subtitle__icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
             </svg>
-            .photo__likes-count 96
-      .photo__item
-        picture.photo__item-picture
+            .subtitle__count 96
+      .item
+        picture.item__picture
           source(media="(min-width: 1200px)", srcset="assets/img/photo-bridge-desktop@1x.webp, assets/img/photo-bridge-desktop@2x.webp 2x", type="image/webp", alt="Мост дьявола", loading="lazy")
           source(media="(min-width: 1200px)", srcset="assets/img/photo-bridge-desktop@1x.jpg, assets/img/photo-bridge-desktop@2x.jpg 2x", type="image/jpeg", alt="Мост дьявола", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-bridge-tablet@1x.webp, assets/img/photo-bridge-tablet@2x.webp 2x", type="image/webp", alt="Мост дьявола", loading="lazy")
           source(media="(min-width: 768px)", srcset="assets/img/photo-bridge-tablet@1x.jpg, assets/img/photo-bridge-tablet@2x.jpg 2x", type="image/jpeg", alt="Мост дьявола", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-bridge-mobile@1x.webp, assets/img/photo-bridge-mobile@2x.webp 2x", type="image/webp", alt="Мост дьявола", loading="lazy")
           source(media="(max-width: 768px)", srcset="assets/img/photo-bridge-mobile@1x.jpg, assets/img/photo-bridge-mobile@2x.jpg 2x", type="image/jpeg", alt="Мост дьявола", loading="lazy")
-          img.photo__item-picture(src="assets/img/photo-bridge-desktop@1x.jpg", alt="Мост дьявола", loading="lazy")
-        .photo__text
-          .photo__title Мост дьявола
-          .photo__author Автор фото: Антон
-          .photo__likes 
-            <svg class="photo__likes-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+          img.item__picture(src="assets/img/photo-bridge-desktop@1x.jpg", alt="Мост дьявола", loading="lazy")
+        .subtitle
+          .subtitle__title Мост дьявола
+          .subtitle__author Автор фото: Антон
+          .subtitle__likes 
+            <svg class="subtitle__icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
             </svg>
-            .photo__likes-count 254
+            .subtitle__count 254
   section.video 
-    .video-intro.heading-text
-      h1.video-title.heading Все еще сомневаетесь?
-      .video-text.text Смотрите видео и скорее за билетами, пока они не подорожали в очередной раз!
-    <iframe class="video-video" src="https://www.youtube-nocookie.com/embed/_qHjLngt7OI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    .video-intro.wrap
+      h1.video-title.wrap__heading Все еще сомневаетесь?
+      .video-text.wrap__text Смотрите видео и скорее за билетами, пока они не подорожали в очередной раз!
+    <iframe class="video-video" src="https://www.youtube-nocookie.com/embed/_qHjLngt7OI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
