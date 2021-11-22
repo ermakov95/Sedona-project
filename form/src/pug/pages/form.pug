@@ -9,5 +9,74 @@ block content
   section.intro
     img.intro__text(src="assets/img/text-sedona.svg", alt="Welcome to Sedona")
     img.intro__triangle(src="assets/img/bg-intro-triangle-desktop.svg", alt="Triangle")
-  section.form 
-    
+  section.forms
+    form.wrapper(action="#") 
+      .title-page
+        h1.title__head.title Оставьте свой отзыв
+        h2.title__text Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      .name-forms
+        .name-forms__title.title Представьтесь:
+        .name-form
+          .name-form__text ИМЯ*:
+          input.name-form__input(type="text" name="firstname" placeholder="Введите имя")
+        .name-form
+          .name-form__text ФАМИЛИЯ*:
+          input.name-form__input(type="text" name="secondname" placeholder="Введите фамилию")
+        .name-form
+          .name-form__text Отчество:
+          input.name-form__input(type="text" name="thirdname" placeholder="Введите отчество")
+      .contact-forms 
+        .contact-forms__title.title Контактная информация:
+        .contact-forms__inner
+          .contact-form
+            .contact-form__text <span>Контактный</span> телефон*:
+            input.contact-form__input(type="tel" name="tel" placeholder="Введите телефон")
+            .contact-form__icon
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                <g id="Page-1">
+                  <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                    <g id="phone" transform="translate(85.000000, 126.000000)">
+                      <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+          .contact-form
+            .contact-form__text Электронная почта*:
+            input.contact-form__input(type="text" name="email" placeholder="Введите e-mail")
+            .contact-form__icon
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+              </svg>
+      .impression-forms
+        .impression-forms__title.title ВАше Общее впечатление:
+        label.impression-forms__radio
+          input(type="radio" name="impression" value="positive" checked)
+          div Скорее положительное
+        label.impression-forms__radio
+          input(type="radio" name="impression" value="negative")
+          div Скорее отрицательное
+        label.impression-forms__radio
+          input(type="radio" name="impression" value="neutral")
+          div Затрудняюсь ответить
+      .attractions-forms 
+        .attractions-forms__title.title посещенные достопримечательности:
+        .attractions-forms__inner
+          label.attractions-forms__check
+            input(type="checkbox" name="Devils-Bridge" value="Yes")
+            div Мост Дьявола
+          label.attractions-forms__check
+            input(type="checkbox" name="Bell-Mountain" value="Yes")
+            div Гора-Колокол
+          label.attractions-forms__check
+            input(type="checkbox" name="Slide-Park" value="Yes")
+            div Слайд-парк
+          label.attractions-forms__check
+            input(type="checkbox" name="Red-Rocks" value="Yes")
+            div Красные скалы
+      .emotions-forms
+        label.emotions-forms__title.title(for="emotions-forms__text")  Опишите свои эмоции:
+        textarea.emotions-forms__text#emotions-forms__text(name="emotions" placeholder="Опишите подробно все свои восторги")
+      .button-wrap
+        button.main-button ОТПРАВИТЬ ОТЗЫВ
+        .legend * — обязательные поля
