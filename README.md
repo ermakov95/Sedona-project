@@ -1,3 +1,1 @@
-# Sedona-project
-## My first project - Sedona
-## Мой первый проект - Седона
+## Vanilla.JS, PUG, SCSS, Webpack
